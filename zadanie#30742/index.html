@@ -10,30 +10,43 @@
 
 <body
     style="background-color: rgb(97, 86, 99); color: white; font-family: Arial, Helvetica, sans-serif; text-align: center;">
+
     <H1>Formularz zgłoszeniowy</H1>
+
     <form action="https://formspree.io/f/mqkwbpvr" method="POST" style="padding-top: 30px;">
+
         <label for="memberName">Imię<br><input type="text" id="memberName" placeholder="Wpisz soje imię"
                 required></label><br><br>
+
         <label for="memberSurname">Nazwsko<br><input type="text" id="memberSurname"
                 placeholder="Wpisz swoje nazwisko"></label><br><br>
+
         <label for="email">Mail<br><input type="email" id="email" placeholder="Wpisz swój email"
                 required></label><br><br>
-        <label for="phoneNumber">Telefon<br><input type="text" id="phoneNumber" placeholder="Wpisz swój nr telefonu"
+
+        <label for="phoneNumber">Telefon<br><input type="tel" id="phoneNumber" placeholder="Wpisz swój nr telefonu"
                 required></label><br><br>
+
         <label for="town">Miasto<br>
             <select name="select" id="town" required>
+                <option value="">Wybierz miasto</option>
                 <option value="Kraków">Kraków</option>
                 <option value="Warszawa">Warszawa</option>
                 <option value="Gdańsk">Gdańsk</option>
             </select>
         </label><br><br>
+
         <p>Płeć</p>
+
         <input type="radio" name="gender">Mężczyzna<br>
         <input type="radio" name="gender">Kobieta<br><br>
+
         <label for="confirm">Zgoda na przetwarzanie danych osobowych<br>
             <input type="checkbox" id="confirm" required></label><br><br>
+
         <label for="message">Uwagi<br><textarea id="message"
                 style="width: 500px; height: 100px; text-align: center;"></textarea></label><br><br>
+
         <input type="submit" value="wyślij zgłoszenie">
     </form>
 </body>
